@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="jq/jquery-3.6.0.min.js"></script>
+    <script defer src="jq/jquery-ui.min.js"></script>
+    <script defer src="js/main.js"></script>
+    <script defer src="js/todolist.js"></script>
+    <title>적응형웹</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body,
+      html {
+        color: #fff;
+        background-color: #f2f2f2;
+      }
+      a {
+        text-decoration: none;
+      }
+      nav a:link,
+      a:visited {
+        color: #fff;
+      }
+      nav a:active {
+        color: yellow;
+      }
+      h1 {
+        font-size: 1.5em;
+      }
+      h2 {
+        font-size: 1.3em;
+      }
+      p {
+        font-size: 1.3em;
+        line-height: 2.5;
+      }
+      li {
+        font-size: 1em;
+        line-height: 2;
+      }
+      #container {
+        width: 100%;
+      }
+      header {
+        width: 100%;
+        height: 300px;
+        background: url(imgs/header.jpg) no-repeat center;
+        background-size: cover;
+      }
+      nav {
+        height: 50px;
+        background-color: #000;
+      }
+      #main-nav {
+        list-style: none;
+        padding: 10px;
+      }
+      #main-nav li {
+        display: inline-block;
+        color: #fff;
+        font-size: 0.8em;
+        margin: 5px 15px;
+      }
+      .photo {
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+      }
+      .photo img {
+        width: 100%;
+      }
+      .ice {
+        border: 1px solid white;
+        border-radius: 50%;
+      }
+      ol {
+        padding-left: 30px;
+        padding-right: 30px;
+      }
+      footer {
+        background-color: #182948;
+        color: #fff;
+        text-align: center;
+        height: 100px;
+      }
+      footer p {
+        text-align: center;
+        color: #fff;
+      }
+      .section_todolist {
+        width: 100%;
+        height: 300px;
+        overflow: hidden;
+        background-color: #d1e2fa;
+        border-radius: 10px;
+        margin: 20px 0;
+      }
+      .todo_title {
+        background-color: #182948;
+        text-align: center;
+        padding: 10px;
+      }
+      .section_todolist > ul {
+        list-style: none;
+      }
+      .todo_list > li > button {
+        align-items: center;
+        border: none;
+        background-color: transparent;
+      }
+      .todo_list > li > button {
+        scale: 1.3;
+        cursor: pointer;
+        position: absolute;
+        right: 35px;
+        align-items: center;
+        border: none;
+        font-size: 20px;
+        width: 30px;
+        height: 30px;
+        background-color: transparent;
+      }
+      .todo_list > li {
+        position: relative;
+        padding: 5px;
+        padding-left: 30px;
+        background-color: #aaceff;
+        font-weight: 600;
+        border-bottom: #111 solid 1px;
+      }
+
+      p {
+        line-height: 1.2;
+        margin-bottom: 12px;
+      }
+      #Interests {
+        background-color: #182948;
+        padding: 20px;
+        border-radius: 10px;
+        margin: 20px 0;
+      }
+      #project {
+        background-color: #182948;
+        margin: 20px 0;
+        padding: 20px;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <header>
+        <nav>
+          <ul id="main-nav">
+            <li><a href="#todolist">Todolist</a></li>
+            <li><a href="#project">Project</a></li>
+            <li><a href="#Interests">Interests</a></li>
+          </ul>
+        </nav>
+      </header>
+      <!-- 투두리스트 -->
+      <section id="todolist" class="section_todolist">
+        <div class="todolist_frame">
+          <div class="todo_title">
+            <h1 class="todo_title_h">ToDoList</h1>
+            <form id="todo_form">
+              <input
+                class="todo_input"
+                type="text"
+                placeholder="Write a To Do and Press Enter"
+                required
+              />
+            </form>
+          </div>
+          <ul id="todo_list" class="todo_list"></ul>
+        </div>
+      </section>
+      <!-- 프로젝트 -->
+      <section id="project">
+        <div class="page-title">
+          <h1>Project</h1>
+        </div>
+        <div class="content">
+          <div class="photo">
+            <img class="project" src="imgs/project3.PNG" alt="프로젝트" />
+            <a href="naver/naver.html"></a>
+          </div>
+          <div class="text">
+            <h2>네이버 클론코딩</h2>
+            <p>html과 css만 사용하여 만든 네이버 클론코딩</p>
+          </div>
+        </div>
+      </section>
+      <section id="Interests">
+        <div class="page-title">
+          <h1>Interests</h1>
+        </div>
+        <div class="content">
+          <div class="text">
+            <p class="interests_inner">
+              Apart from being a web developer, I enjoy most of my time being
+              indoors.
+            </p>
+            <p>
+              I follow a number of sci-fi and fantasy genre movies and
+              television shows,Put a jigsaw puzzle together.
+            </p>
+            <p>
+              When forced outdoors, I organize my thoughts while taking a walk.
+            </p>
+          </div>
+        </div>
+      </section>
+      <footer class="section_footer">
+        <div class="footer_bottom">
+          <div class="footer_introduce">
+            <h1>Eom Taehoo</h1>
+            <h2>Seoul, Korea</h2>
+            <h2 class="footer_email">0323xogn@gmail.com</h2>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

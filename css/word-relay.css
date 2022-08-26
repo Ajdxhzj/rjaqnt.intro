@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.box{
+  width: 400px;
+  height: 300px;
+  background-color: powderblue;
+  margin: 50px;
+  padding: 20px;
+  text-align: center;
+}
+h1{
+  margin-bottom: 20px;
+}
+.player{
+  font-size: 20px;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+.word{
+  font-size: 20px;
+  font-weight: 900;
+  margin-bottom: 20px;
+}

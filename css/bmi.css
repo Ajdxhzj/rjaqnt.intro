@@ -1,0 +1,42 @@
+.cal{
+  display: block;
+  width: 350px;
+  height: 460px;
+  text-align: center;
+  background-color: aqua;
+  padding-top: 10px;
+  box-shadow: 3px 4px 4px;
+  
+}
+
+.BMI{
+  width: 210px;
+  border: 1px solid #565656;
+  margin: auto
+}
+
+.table{
+  display: inline-block;
+  width: 100px;
+  border: 1px solid #565656;
+  margin: 1px;
+  background-color: white;
+}
+
+.result{
+  padding: 5px;
+  outline: none;
+  margin-top: 10px;
+}
+
+input{
+  background-color: white;
+  margin-left: 30px;
+}
+
+h3{
+  position: relative;
+  top: 5px;
+  display: inline-block;
+  width: 60px;
+}

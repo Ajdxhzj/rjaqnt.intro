@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="images/favicon.ico">
+  <link rel="stylesheet" href="css/intro.css">
+  <script defer src="js/agent.js"></script>
+  <script defer src="js/login.js"></script>
+  <script defer src="js/clock.js"></script>
+  <script defer src="js/saying.js"></script>
+  <script defer src="js/background.js"></script>
+  <script defer src="js/weather.js"></script>
+  <title>intro</title>
+</head>
+
+<body>
+  <div class="weather_box">
+    <div id="weather">
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+
+  <form class="hidden" id="login_form">
+    <input required maxlength="10" type="text" placeholder="What is your name?">
+    <button onclick="hrefLink()"></button>
+  </form>
+
+  <h2 id="clock">00:00:00</h2>
+
+  <div id="saying">
+    <span></span>
+    <span></span>
+  </div>
+
+
+
+
+</body>
+
+</html>

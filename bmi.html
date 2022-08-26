@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bmi.css" />
+    <script src="js/bmi.js" defer></script>
+  </head>
+  <body>
+    <section class="cal">
+      <div>
+        <h1>BMI 계산기</h1>
+        <h3>키</h3>
+        <input id="inputHeight" type="text" oninput="bmiheight()" />
+      </div>
+      <div>
+        <h3>몸무게</h3>
+        <input id="inputWeight" type="text" oninput="bmiweight()" />
+      </div>
+      <button class="result" onclick="result(bmiheight(),bmiweight())">결과보기</button>
+
+    <div>
+      <h1>BMI for adult</h1>
+      <div class="BMI"></div>
+    </div>
+    <!-- <section>
+      <table border="1">
+        <caption>MBI for adult:</caption>
+        <thead>
+          <tr>
+            <th>BMI</th>
+            <th>상태</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>18.5미만</th>
+            <td>저체중</td>
+          </tr>
+          <tr>
+            <th>18.5~24.9</th>
+            <td>표준</td>
+          </tr>
+          <tr>
+            <th>25~29.9</th>
+            <td>비만위험</td>
+          </tr>
+          <tr>
+            <th>30이상</th>
+            <td>비만</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+     -->
+    </section>
+
+  </body>
+</html>
